@@ -18,4 +18,17 @@ function capitalizeFirstLetter(sentence) {
   console.log(newSentence);
 }
 
-capitalizeFirstLetter(sentence);
+function capitalizeFirstLetter1(sentence) {
+  //split sentence
+
+  let words = sentence.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] =
+      words[i][0].toLowerCase() +
+      words[i][1].toUpperCase() +
+      words[i].slice(2).toLowerCase();
+  }
+  const newSentence = words.join(" ");
+  return newSentence;
+}
+console.log(capitalizeFirstLetter1(sentence));

@@ -19,14 +19,3 @@ console.log(countMaxOccurrences(arr));
 function numberic(arr) {
   return arr.filter((element) => typeof element === "number" && element > 5);
 }
-
-function filterNumber(inputArray) {
-  let pureArray = [];
-  inputArray.filter((element) => {
-    if (typeof element === "number" && element > 5) {
-      pureArray.push(element);
-    }
-  });
-  console.log(pureArray);
-  return pureArray;
-}
