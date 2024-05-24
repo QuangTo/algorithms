@@ -14,8 +14,17 @@ function countMaxOccurrences(arr) {
 }
 
 const arr = [1, 4, 5, 12, "a", "b", 8, 7, 12];
-console.log(countMaxOccurrences(arr));
+// console.log(countMaxOccurrences(arr));
 
 function numberic(arr) {
   return arr.filter((element) => typeof element === "number" && element > 5);
+}
+
+const arr2 = [1, 4, 5, "12", "a", "b", 8, 7, 12];
+console.log("filter number array", convertStringtoNumber(arr2));
+
+function convertStringtoNumber(arr) {
+  // const numbericArray = arr.filter((el) => !isNaN(el) && el != "").map(Number);
+  const numbericArray = Array.from(arr, (el) => el.split(","), Number);
+  return numbericArray;
 }
