@@ -20,7 +20,7 @@ function numberic(arr) {
   return arr.filter((element) => typeof element === "number" && element > 5);
 }
 
-const arr2 = [1, 4, 5, "12", "a", "b", 8, 7, 12];
+const arr2 = ["b3", "4v", "5", "12", "a", "b", "8", "7", "12"];
 console.log("filter number array", convertStringtoNumber(arr2));
 
 function convertStringtoNumber(arr) {
