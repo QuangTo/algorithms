@@ -1,6 +1,10 @@
+/**
+ * time complexity is O(n^2)
+ * array accept number only
+ */
 const arr = [1, 23, 12, 34, 6, 45, 0];
 
-function originalSort(arr) {
+function bubbleSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] > arr[j]) {
@@ -21,3 +25,12 @@ console.log(originalSort(arr));
 // });
 
 // console.log(slove);
+
+// other solution to reduce time complexity  o(n^2) to O(n) ?
+
+/**
+ * Advance
+ * Array has string inside
+ */
+
+const randomArr = ["ABC", 0, 67, 5, 3, -67];
